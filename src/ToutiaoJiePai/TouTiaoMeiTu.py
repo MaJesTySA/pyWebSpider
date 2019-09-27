@@ -10,8 +10,9 @@ from config import *
 import pymongo
 from multiprocessing import Pool
 
-client = pymongo.MongoClient(MONGO_URL,connect=False)
+client = pymongo.MongoClient(MONGO_URL, connect=False)
 db = client[MONGO_DB]
+
 
 def get_page_index(offset, keyword):
     data = {
@@ -104,7 +105,7 @@ def download_image(url):
 
 
 def save_image(content):
-    file_path = '{0}/{1}.{2}'.format(os.getcwd()+'/imgs', md5(content).hexdigest(), 'jpg')
+    file_path = '{0}/{1}.{2}'.format(os.getcwd() + '/imgs', md5(content).hexdigest(), 'jpg')
     if not os.path.exists(file_path):
         with open(file_path, 'wb') as f:
             f.write(content)
@@ -124,6 +125,6 @@ def main(offset):
 
 
 if __name__ == '__main__':
-    groups=[x*20 for x in range(GROUP_START,GROUP_END+1)]
-    pool=Pool()
-    pool.map(main,groups)
+    groups = [x * 20 for x in range(GROUP_START, GROUP_END + 1)]
+    pool = Pool()
+    pool.map(main, groups)
