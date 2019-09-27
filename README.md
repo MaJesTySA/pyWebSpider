@@ -4,4 +4,4 @@
 
 <div align=center><img src="https://raw.githubusercontent.com/MaJesTySA/pyWebSpider/master/imgs/maoyantop100_1.png" width=70%/></div>
 
-<img src="https://raw.githubusercontent.com/MaJesTySA/pyWebSpider/master/imgs/maoyantop100_2.png" />
+<div align=center><img src="https://raw.githubusercontent.com/MaJesTySA/pyWebSpider/master/imgs/maoyantop100_2.png" /></div>
