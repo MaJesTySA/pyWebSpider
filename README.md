@@ -16,6 +16,7 @@
 <div align=center><img src="https://raw.githubusercontent.com/MaJesTySA/pyWebSpider/master/imgs/toutiao_0.png" width=70%/></div>
 <div align=center><img src="https://raw.githubusercontent.com/MaJesTySA/pyWebSpider/master/imgs/toutiao_1.png"</img></div>
 <div align=center><img src="https://raw.githubusercontent.com/MaJesTySA/pyWebSpider/master/imgs/toutiao_2.png" ></div>
+
 # 爬取京东美食
 
 使用`selenium`+`PyQuery`爬取京东美食。
