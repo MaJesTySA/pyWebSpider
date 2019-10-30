@@ -26,7 +26,6 @@ class CnblogsSpider(scrapy.Spider):
 
         item = BlogItem()
 
-
         item['title'] = response.xpath('//a[@class="postTitle2"]/text()').extract_first()
         item['time'] = response.xpath('//*[@id="post-date"]/text()').extract_first()
         item['url'] = response.url
@@ -48,9 +47,6 @@ class CnblogsSpider(scrapy.Spider):
             url=info_url.format(author=author, postId=post_id, blogId=blog_id, blogUserGuid=blog_user_guid),
             callback=self.parse_infos, meta={'item': item})
 
-    def parse_article(self,response):
-        pass
-
     def get_infos(self, response):
         html = response.text
         blog_id = re.findall('.*cb_blogId.*?(\d+).*', html)[0]
@@ -65,10 +61,9 @@ class CnblogsSpider(scrapy.Spider):
             item['tags'] = [tag.xpath('text()').extract_first() for tag in tags]
         yield item
 
-
     def parse_view_count(self, response):
         item = response.meta['item']
-        item['view'] = str(response.body,'utf-8')
+        item['view'] = str(response.body, 'utf-8')
         yield item
 
     def parse_infos(self, response):
