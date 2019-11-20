@@ -9,19 +9,6 @@ class BlogPipeline(object):
     def process_item(self, item, spider):
         return item
 
-
-class JsonSavedPipeline(object):
-    def __init__(self):
-        self.file = codecs.open('blog.json', 'a', encoding='utf-8')
-
-    def process_item(self, item, spider):
-        self.file.write(json.dumps(dict(item), ensure_ascii=False) + '\n')
-        return item
-
-    def spider_closed(self, spider):
-        self.file.close()
-
-
 class FrontImagePipeline(ImagesPipeline):
     def item_completed(self, results, item, info):
         if 'front_image_url' in item:
