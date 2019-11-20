@@ -57,12 +57,14 @@
 
 使用`scrapy`爬取CNBlogs最新文章。
 
+[cnblogs](https://github.com/MaJesTySA/pyWebSpider/blob/master/src/CNBlogs_Articles/CNBlogs_Articles/spiders/cnblogs.py)
+
 <div align=center><img src="https://github.com/MaJesTySA/pyWebSpider/raw/master/imgs/cnblogs_1.png" /></div>
 <div align=center><img src="https://github.com/MaJesTySA/pyWebSpider/raw/master/imgs/cnblogs_2.png" /></div>
-
 # 爬取技术博客新闻
 
 使用`scrapy.ItemLoader`爬取CNBlogs新闻，并存入`MySQL`，比上一个更加简洁高效。
 
-<div align=center><img src="https://raw.githubusercontent.com/MaJesTySA/pyWebSpider/master/imgs/cnblogsnew.png" /></div>
+[cnblogs](https://github.com/MaJesTySA/pyWebSpider/blob/master/src/CNBlogs_New/CNBlogs_imooc_ver/spiders/cnblogs.py)
 
+<div align=center><img src="https://raw.githubusercontent.com/MaJesTySA/pyWebSpider/master/imgs/cnblogsnew.png" /></div>
