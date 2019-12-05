@@ -86,6 +86,7 @@
 
 - [者也](https://github.com/996refuse/zheye)识别知乎倒立中文验证码。
 - 使用[云打码](http://www.yundama.com/)识别英文验证码。
+- 使用`Middleware`和[fake-useragent](https://github.com/hellysmile/fake-useragent)来产生不同UA，突破限制。
 
 **问题列表**：
 
@@ -94,7 +95,6 @@
 **回答列表**：
 
 <div align=center><img src="https://raw.githubusercontent.com/MaJesTySA/pyWebSpider/master/imgs/zhihuans_2.png" width=80%/></div>
-暂时没处理防爬（同一个Cookie同一时间多次访问）。
 
 # 爬取拉勾网职位
 
