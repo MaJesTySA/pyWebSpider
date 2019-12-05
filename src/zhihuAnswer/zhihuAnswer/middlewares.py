@@ -13,5 +13,4 @@ class RandomUserAgentMiddleware(object):
     def process_request(self, request, spider):
         def get_ua():
             return getattr(self.ua, self.ua_type)
-        ua_type = get_ua()
-        request.headers.setdefault('User-Agent', ua_type)
+        request.headers.setdefault('User-Agent', get_ua())
