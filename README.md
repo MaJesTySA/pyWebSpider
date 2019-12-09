@@ -106,6 +106,6 @@
 
 # Simple IP Pool
 
-从[西刺代理](https://www.xicidaili.com)爬取代理IP，测试可用性，将其使用到scrapy，实现一个简单的IP代理池。
+从[西刺代理](https://www.xicidaili.com)爬取代理IP，测试可用性，加入到请求中，实现一个简单的IP代理池。
 
 [ip_pool](https://github.com/MaJesTySA/pyWebSpider/blob/master/src/IPPool/ip_pool.py)
