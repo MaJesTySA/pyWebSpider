@@ -103,3 +103,9 @@
 [lagou](https://github.com/MaJesTySA/pyWebSpider/blob/master/src/lagou_jobs/lagou_jobs/spiders/lagou.py)
 
 <div align=center><img src="https://raw.githubusercontent.com/MaJesTySA/pyWebSpider/master/imgs/lagou.png" width=90%/></div>
+
+# Simple IP Pool
+
+从[西刺代理](https://www.xicidaili.com)爬取代理IP，测试可用性，将其使用到scrapy，实现一个简单的IP代理池。
+
+[ip_pool](https://github.com/MaJesTySA/pyWebSpider/blob/master/src/IPPool/ip_pool.py)
